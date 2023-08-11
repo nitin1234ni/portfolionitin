@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Log In log Out</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -16,8 +16,12 @@
             background-color: rgba(220, 29, 29, 0.621);
             padding: 0px;
             margin: 0px;
-            width: 100vw;
-            background-color: black;
+            width: 80vw;
+            background-color: #F3F2F1;
+
+
+            overflow-x: hidden;
+
         }
 
         .navbar li {
@@ -35,7 +39,7 @@
         .navbar {
             display: flex;
             background: #262626;
-            /* background-color: rgb(12, 8, 8); */
+
             justify-content: flex-end;
             position: fixed;
             top: 0;
@@ -48,7 +52,8 @@
         .imgt {
             height: 100vh;
             width: 80vw;
-            background-color: black;
+            background-color: #F3F2F1;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -59,35 +64,38 @@
         .about {
             height: 100vh;
             width: 40vw;
-            background-color: black;
+            background-color: #F3F2F1;
+
+
             padding-top: 200px;
 
         }
 
         .imgm {
-            /* padding-top: 200px; */
-            height: 90vh;
+
+            height: 75vh;
             width: 40vw;
-            /* background-color: rgb(21, 23, 155); */
+
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 45px;
 
         }
 
         img {
-            /* max-height: fit-content; 
-             object-fit: cover; */
+
             background-size: cover;
-            height: 90vh;
+            height: 75vh;
             width: 35vw;
-            padding-top:12px ;
+            padding-top: 12px;
         }
 
         .about2 {
             height: 65vh;
             width: 80vw;
-            background-color: black;
+            background-color: #F3F2F1;
+            /* background-color: black; */
             display: flex;
             justify-content: center;
             align-items: end;
@@ -98,7 +106,8 @@
         .box {
             height: 60vh;
             width: 35vw;
-            background-color: black;
+            background-color: #F3F2F1;
+            /* background-color: black; */
             /* background: #262626; */
             /* background-color: rgb(168, 23, 73); */
             text-align: center;
@@ -112,57 +121,65 @@
 
         .innerbox {
             background-color: aliceblue;
-            height: 290px;
+            height: 340px;
             width: 27VW;
-            margin-bottom: 50PX;
-            margin-top: 46px;
-            /* padding-top: 78PX; */
-            /* margin-left: 95px; */
+            margin-bottom: 40PX;
+            margin-top: 36px;
+
             color: white;
             background: #262626;
-            /* background-color: black; */
+
             text-overflow: hidden;
             border-radius: 10px;
 
         }
-        .innerbox:hover{
+
+        .innerbox:hover {
             height: 380px;
             width: 27VW;
-            /* font-size: larger;  */
+
             transition: all ease-in-out 0.8s;
             background-color: rgb(203, 86, 86);
-            color:black;
+            color: black;
             font-weight: 600;
-            /* opacity: 1.8; */
+
             margin-bottom: 28px;
             text-align: center;
-            
+
 
         }
-        #resume{
-            color: rgb(0, 0, 0);
-            font-size: large;
-            font-weight: 600;
-            text-transform: capitalize;
-            background: black;
-            border: none;
-        }
-        #resume:hover{
+
+        #resume {
             color: rgb(0, 0, 0);
             font-size: large;
             font-weight: 600;
             text-transform: capitalize;
             background: rgb(223, 10, 10);
+
+            border: none;
         }
+
+        #resume:hover {
+            color: rgb(0, 0, 0);
+            font-size: larger;
+            font-weight: 600;
+            text-transform: capitalize;
+            background: rgb(223, 10, 10);
+        }
+
         .content {
             height: 60vh;
             width: 45vw;
             /* background: #080808; */
-            background-color: black;
+            background-color: #F3F2F1;
+            /* background-color: black; */
             /* background: #262626; */
             /* background-color: rgb(127, 128, 169); */
             padding-top: 52px;
-            color: aliceblue;
+            color: #000;
+
+            overflow-wrap: break-word;
+
 
 
         }
@@ -176,13 +193,14 @@
             height: 85px;
             width: 100vw;
             padding-top: 14px;
-            color: white;
+
         }
 
         .Education {
             height: 70vh;
             width: 80vw;
-            background-color: black;
+            background-color: #F3F2F1;
+            /* background-color: black; */
             /* background-color: aqua; */
             display: flex;
             align-items: center;
@@ -190,6 +208,7 @@
             justify-content: space-between;
             margin-left: 150px;
             flex-direction: row-reverse;
+
 
         }
 
@@ -202,9 +221,7 @@
             text-align: center;
             justify-content: center;
             padding-top: 72px;
-            /* display: flex;
-            align-items: center;
-            justify-content: center; */
+
             color: white;
             transition-property: background-color;
             transition-property: font-size;
@@ -221,26 +238,28 @@
             background-color: rgb(203, 86, 86);
             color: rgba(20, 18, 18, 0.844);
             font-weight: 600;
-            
-            /* opacity: 1.8; */
+
+
             margin-bottom: 28px;
             text-align: center;
 
 
 
         }
-       
+
 
         .skills {
             height: 70vh;
             width: 80vw;
-            background: black;
+            background-color: #F3F2F1;
+            /* background: black; */
             /* background-color: aqua; */
             display: flex;
             align-items: center;
             justify-content: center;
             justify-content: space-between;
             margin-left: 150px;
+
         }
 
         .ski {
@@ -253,6 +272,7 @@
             justify-content: center;
             padding-top: 92px;
             color: white;
+
         }
 
         .ski:hover {
@@ -263,7 +283,7 @@
             transition: all ease-in-out 0.8s;
             background-color: rgb(203, 86, 86);
             color: rgba(20, 18, 18, 0.844);
-            /* opacity: 1.8; */
+
             margin-bottom: 28px;
             text-align: center;
         }
@@ -279,35 +299,38 @@
         .contactus {
             height: 70vh;
             width: 80vw;
-            background-color: black;
+            background-color: #F3F2F1;
+            /* background-color: black; */
             /* background-color: aqua; */
             display: flex;
             align-items: center;
             justify-content: center;
             justify-content: space-between;
             margin-left: 150px;
+
         }
 
         .cont1 {
             height: 65vh;
             width: 38vw;
-            background: black;
+            background-color: #F3F2F1;
+            /* background: black; */
             /* background-color: #080808; */
             /* background-color: rgb(226, 143, 26); */
             padding-top: 16px;
-            /* color: white; */
-            /* text-align: center; */
-            /* justify-content: center; */
-            /* padding-top: 92px; */
+
+
         }
 
         .cont2 {
             height: 65vh;
             width: 38vw;
-            background: black;
+            background-color: #F3F2F1;
+            /* background-color:black; */
             /* background-color: #080808; */
             /* background-color: rgb(226, 143, 26); */
             padding-top: 25px;
+
 
         }
 
@@ -319,19 +342,17 @@
             padding-left: 30px;
             box-shadow: 1px rgb(44, 37, 37);
             text-align: center;
-            /* align-items: center; */
+
         }
 
         .icon i:hover {
             cursor: pointer;
-            /* box-shadow: 5px 6px 7px 1px rgb(213, 55, 55); */
-            /* margin-bottom: 45px; */
-            /* color: rgb(219, 79, 89); */
+
             background-color: none;
-            color: white;
+            color: black;
             transition: ease-in-out 0.5;
 
-            /* margin-bottom: 220px; */
+
 
         }
 
@@ -344,13 +365,13 @@
             background: rgb(223, 10, 10);
 
         }
-       
-        
+
+
 
         button:hover {
             background-color: #000;
             color: white;
-            
+
         }
 
 
@@ -394,16 +415,51 @@
             display: inline-block;
             height: 150px;
             width: 11vw;
-            background-color: black;
-             margin-top: -88px; 
-             object-fit: cover;
-             margin-bottom: 12px;
-             
+            background-color: #F3F2F1;
+            /* background-color: black; */
+            margin-top: -88px;
+            object-fit: cover;
+            margin-bottom: 12px;
+
         }
-.bim{
-    height: 150px;
+
+        .bim {
+            height: 150px;
             width: 11vw;
-}
+        }
+
+        .margan {
+            color: aliceblue;
+            font-size: larger;
+            padding-left: 60px;
+        }
+
+        .wrap {
+            color: red;
+            font-size: xx-large;
+            font-weight: bold;
+            margin-left: 60px;
+        }
+
+        .margan2 {
+            color: brown;
+            font-size: 55px;
+            font-weight: bolder;
+            margin-left: 60px;
+        }
+
+        .margan3 {
+            color: black;
+            margin-left: 60px;
+            font-size: large;
+            font-weight: 500;
+
+        }
+
+        .but {
+            margin-left: 60px;
+        }
+
         @media(max-width:440px) {
             .navbar {
                 display: none;
@@ -423,11 +479,12 @@
             .about {
 
                 width: 95vw;
-                background-color: black;
+                background-color: #F3F2F1;
+                /* background-color: black; */
                 /* padding-left: 32px; */
-                padding-top: 60px;
+                padding-top: 45px;
                 height: 60vh;
-                
+
 
 
             }
@@ -438,7 +495,7 @@
                 height: 55vh;
                 /* background-color: rgb(21, 23, 155); */
                 /* text-align: center; */
-
+                margin-top: 0;
                 object-fit: cover;
             }
 
@@ -488,24 +545,25 @@
                 justify-content: center;
                 align-items: center;
             }
-            .innerbox:hover{
+
+            .innerbox:hover {
                 height: 55vh;
                 width: 85vw;
             }
-           
-            .ski:hover{
 
+            .ski:hover {}
+
+            .spic {
+                margin-top: -94px;
+                width: 40vw;
+                object-fit: cover;
+                /* margin-bottom: 0px; */
             }
-            .spic{
-                 margin-top: -94px;
-                 width: 40vw;
-                 object-fit: cover;
-                 /* margin-bottom: 0px; */
+
+            .bim {
+                height: 150px;
+                width: 40vw;
             }
-            .bim{
-    height: 150px;
-            width: 40vw;
-}
 
             .content {
 
@@ -515,8 +573,7 @@
                 /* background-color: rgb(127, 128, 169); */
                 padding: 0;
                 margin: 0;
-                /* font-size: small; */
-                /* text-align: center; */
+
                 height: 62vh;
                 display: flex;
                 flex-direction: column;
@@ -535,8 +592,7 @@
                 height: 95px;
                 /* text-align: center; */
                 padding-left: 15px;
-                /* align-items: center;
-                justify-content: center; */
+
 
             }
 
@@ -555,17 +611,18 @@
                 padding-top: 50px;
 
             }
-            .edu:hover{
+
+            .edu:hover {
                 height: 43vh;
-            width: 95vw;
-            font-size: larger;
-            font-weight: 600;
-            transition: all ease-in-out 0.8s;
-            background-color: rgb(203, 86, 86);
-            color: rgba(20, 18, 18, 0.844);
-            /* opacity: 1.8; */
-            margin-bottom: 28px;
-            text-align: center;
+                width: 95vw;
+                font-size: larger;
+                font-weight: 600;
+                transition: all ease-in-out 0.8s;
+                background-color: rgb(203, 86, 86);
+                color: rgba(20, 18, 18, 0.844);
+
+                margin-bottom: 28px;
+                text-align: center;
 
             }
 
@@ -576,7 +633,7 @@
                 padding: 0;
                 width: 100vw;
                 justify-content: space-around;
-                /* object-fit: cover; */
+
             }
 
             .ski {
@@ -591,17 +648,18 @@
                 margin: 0;
 
             }
-            .ski:hover{
+
+            .ski:hover {
                 height: 43vh;
-            width: 95vw;
-            font-size: larger;
-            font-weight: 600;
-            transition: all ease-in-out 0.8s;
-            background-color: rgb(203, 86, 86);
-            color: rgba(20, 18, 18, 0.844);
-            /* opacity: 1.8; */
-            margin-bottom: 28px;
-            text-align: center;
+                width: 95vw;
+                font-size: larger;
+                font-weight: 600;
+                transition: all ease-in-out 0.8s;
+                background-color: rgb(203, 86, 86);
+                color: rgba(20, 18, 18, 0.844);
+
+                margin-bottom: 28px;
+                text-align: center;
             }
 
             .prog {
@@ -618,7 +676,7 @@
                 width: 100vw;
                 justify-content: space-between;
 
-                /* object-fit: cover; */
+
             }
 
             .cont1 {
@@ -641,6 +699,8 @@
 
             .footer {
                 text-align: center;
+                width: 100vw;
+                font-size: small
             }
 
 
@@ -651,11 +711,12 @@
 
                 font-size: x-large;
                 font-weight: 400;
-                /* color: darkred; */
+
                 padding: 12px;
-                /* box-shadow: 5px 6px 7px 1px rgb(44, 37, 37); */
+
 
                 align-items: center;
+
             }
 
             .cimg {
@@ -685,7 +746,28 @@
                 margin-left: 0px;
             }
 
+            .margan {
+                padding-left: 30px;
+                color: #000;
+                font-weight: 600;
+                font-size: larger;
+            }
 
+            .wrap {
+                margin-left: 30px;
+            }
+
+            .margan2 {
+                margin-left: 30px;
+            }
+
+            .margan3 {
+                margin-left: 30px;
+            }
+
+            .but {
+                margin-left: 30px;
+            }
 
 
         }
@@ -694,9 +776,10 @@
 
 <body>
     <div class="navbar flex">
-        
+
         <ul>
-          <span style="margin-right: 645px; font-size: xx-large;color: aliceblue; color: red; padding-top: 25px;">Portfolio</span>
+            <span
+                style="margin-right: 645px; font-size: xx-large;color: aliceblue; color: red; padding-top: 25px;">Portfolio</span>
             <li>home</li>
             <li>about</li>
             <li>service</li>
@@ -707,17 +790,16 @@
     <div class="imgt">
 
         <div class="about">
-            <span style="color: aliceblue; font-size: larger; padding-left: 60px;">HELLO I,M</span>
+            <span class="margan">HELLO I,M</span>
             <br><br>
-            <SPan style="color: brown; font-size: 55px;font-weight: bolder; margin-left: 60px;">Nitin Goyal</SPan>
+            <span class="margan2">Nitin Goyal</Span>
             <br><br>
-            
 
-            <span class="wrap" id="element"
-                style="color: red; font-size: xx-large; font-weight: bold; margin-left: 60px;"></span>
-            <br>
-            <span style="color: rgb(244, 237, 237); margin-left: 60px;">This is my portfolio website</span> <br><br><br> <br>
-            <button style="margin-left: 60px;">Contact Me</button>
+
+            <span class="wrap" id="element"></span>
+            <br> <br>
+            <span class="margan3">This is my portfolio website</span> <br><br><br> <br>
+            <button class="but">Contact Me</button>
             <button style="margin-left: 10px;">See Project</button>
 
         </div>
@@ -735,7 +817,7 @@
 
             <div class="innerbox">
                 <div class="spic">
-<img class="bim" src="istockphoto-1227303423-2048x2048.jpg" alt="">
+                    <img class="bim" src="istockphoto-1227303423-2048x2048.jpg" alt="">
                 </div>
                 <br><br>
                 <span class="abtn" style="color: #000;font-size: xx-large;font-weight: bold; color: white; ">Nitin
@@ -747,14 +829,14 @@
         </div>
         <div class="content">
 
-            <span style=" color: aliceblue;font-size: 35px; font-weight: bolder;">Nitin goyal <br>web
+            <span style=" color: black;font-size: 35px; font-weight: bolder;">Nitin goyal <br>web
                 doveloper</span><br><br>
             <p style="word-wrap: break-word;
           text-transform: capitalize;">
 
                 i am Nitin Goyal I am pursuing my Master Degree From LNCT Collage Bhopal
-                and Diploma in avitiom
-                Training Institute. I am Front-End Developer with passion for desining
+                and Diploma in Eviation computer
+                Training Institute. I am Full-Stack Developer with passion for desining
                 clean and functional websites. I enjoy making clean and creative websites
                 which are reponsive in nature. I am constantly looking to improve
                 my skills and learn more along the way.
@@ -914,7 +996,7 @@
     </div>
     <div class="footer">
         <div
-            style="background-color: black; color: antiquewhite; font-size: larger; display: flex;align-items: center; justify-content: center; width: 100vw;">
+            style="background-color: black; color: antiquewhite; font-size: larger; display: flex;align-items: center; justify-content: center; width:100vw ;">
             <div>Copyright © 2023 | Designed By NITIN GOYAL</div> <br> <br>
         </div>
 
@@ -932,8 +1014,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-           
-            strings: ['Web Designer', 'Full-Stack Developer', 'Java Developer'],
+
+            strings: ['Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer', 'Web Designer', 'Java Developer', 'Full-Stack Developer'],
             typeSpeed: 50,
         });
 
