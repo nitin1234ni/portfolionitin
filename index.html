@@ -319,6 +319,7 @@
 
 
         const app = initializeApp(firebaseConfig);
+        const msg = document.getElementById("msg");
 
 
         import { getDatabase, ref, child, set, update, remove }
@@ -333,43 +334,35 @@
         var insbtn = document.getElementById("Insbtn");
 
         function InsertData() {
-            set(ref(db, "The user/" + name.value), {
-                UNAME: name.value,
-                uemail: email.value,
-                ucontact: contect.value,
 
-                utext: text.value
-            })
 
-                .then(() => {
+            if (name.value == "" || email.value == "" || contect.value == "" || text.value == "") {
+                msg.innerHTML = "fill the details"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                    form.reset()
+                }, 5000)
+            }
+            else {
+                set(ref(db, "The user/" + name.value), {
+                    UNAME: name.value,
+                    uemail: email.value,
+                    ucontact: contect.value,
 
-                    const msg = document.getElementById("msg");
-                    if (name.value=="") {
-                        msg.innerHTML = "fill the deatails"
-                        setTimeout(function () {
-                            msg.innerHTML = ""
-                            form.reset()
-                        }, 5000)
-                    }
-                    else{
+                    utext: text.value
+                })
+
+                    .then(() => {
                         msg.innerHTML = "Message Sent Sucessfully"
                         setTimeout(function () {
                             msg.innerHTML = ""
                             form.reset()
                         }, 5000)
-                        // form.reset();
-                    }
-                    
-                       
-                
-
-
-
-
-                })
-                .catch((error) => {
-                    alert("error" + error);
-                })
+                    })
+                    .catch((error) => {
+                        alert("error" + error);
+                    })
+            }
         }
         insbtn.addEventListener('click', InsertData);
     </script>
