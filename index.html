@@ -240,7 +240,7 @@
                     <form>
                         <input type="text" id="Name" name="Name" placeholder="Your Name" required>
                         <input type="email" id="Email" name="Email" placeholder="Your Email" required>
-                        <input type="number" id="Contect" name="contact" placeholder="Your Contect" required>
+                        <input type="number" id="Contect" name="contact" placeholder="Your Contact" required>
                         <input name="Message" id="Message" placeholder="Your Message"></input>
                         <button id="Insbtn" type="button" class="btn btn2">Submit</button>
                     </form>
@@ -337,7 +337,7 @@
 
 
             if (name.value == "" || email.value == "" || contect.value == "" || text.value == "") {
-                msg.innerHTML = "fill the details"
+                msg.innerHTML = "fill the correct details"
                 setTimeout(function () {
                     msg.innerHTML = ""
                     form.reset()
@@ -353,7 +353,7 @@
                 })
 
                     .then(() => {
-                        msg.innerHTML = "Message Sent Sucessfully"
+                        msg.innerHTML = "Thanku for Contact us"
                         setTimeout(function () {
                             msg.innerHTML = ""
                             form.reset()
