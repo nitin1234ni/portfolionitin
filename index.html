@@ -346,6 +346,10 @@
                     const msg = document.getElementById("msg");
                     if (name.value=="") {
                         msg.innerHTML = "fill the deatails"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                            form.reset()
+                        }, 5000)
                     }
                     else{
                         msg.innerHTML = "Message Sent Sucessfully"
